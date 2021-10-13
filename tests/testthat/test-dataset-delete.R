@@ -1,0 +1,23 @@
+context("Dataset delete")
+
+source("helper-credentials.R")
+
+test_that("delete_dataset", {
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_EXTERNAL_REGRESSION_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_EXTERNAL_REGRESSION_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_EXTERNAL_CLASSIFICATION_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_EXTERNAL_CLASSIFICATION_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_EXTERNAL_MULTICLASSIFICATION_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_EXTERNAL_MULTICLASSIFICATION_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_ZIPPED")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_ZIPPED")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_REGRESSION")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_REGRESSION")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_CLASSIFICATION")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_CLASSIFICATION")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_MULTICLASSIFICATION")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_MULTICLASSIFICATION")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_TS")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_TS")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_IMG")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_IMG")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_TEXTSIM_ITEMS")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_TEXTSIM_ITEMS")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_TESTU_TEXTSIM_QUERIES")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_TESTU_TEXTSIM_QUERIES")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_SQL_DATASOURCE_RAW_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_SQL_DATASOURCE_RAW_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_SQL_DATASOURCE_REQUEST_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_SQL_DATASOURCE_REQUEST_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_S3_DATASOURCE_RAW_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_S3_DATASOURCE_RAW_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_SFTP_DATASOURCE_RAW_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_SFTP_DATASOURCE_RAW_TESTU")
+  expect(delete_dataset(get_dataset_id_from_name(get_project_id_from_name("PROJECT_TESTU"), "DATASET_FTP_DATASOURCE_RAW_TESTU")) == 204, "delete_dataset() doesn't retrieve a 204 status code for DATASET_FTP_DATASOURCE_RAW_TESTU")
+})
