@@ -1,7 +1,7 @@
 Package: previsionio
 Type: Package
 Title: 'Prevision.io' R SDK
-Version: 11.3.1
+Version: 11.3.3
 Authors@R: 
     c(person(given = "Florian",
              family = "Laroumagne",
@@ -13,16 +13,15 @@ Authors@R:
 Description: For working with the 'Prevision.io' AI model management platform's API <https://prevision.io/>.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: false
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 Imports: data.table, futile.logger, httr, jsonlite, Metrics, graphics,
         stats, utils, XML, magrittr, plotly
 Suggests: testthat
 Depends: R (>= 2.10)
 NeedsCompilation: no
-Packaged: 2021-10-25 16:06:37 UTC; Florian
+Packaged: 2021-11-16 15:40:52 UTC; Florian
 Author: Florian Laroumagne [aut, cre],
   Prevision.io Inc [cph]
 Maintainer: Florian Laroumagne <florian.laroumagne@prevision.io>
 Repository: CRAN
-Date/Publication: 2021-10-25 16:20:05 UTC
+Date/Publication: 2021-11-17 09:20:02 UTC
