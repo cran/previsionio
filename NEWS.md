@@ -1,5 +1,30 @@
 # NEWS
 
+## 11.7.0
+
+Release date - 11 March 2022
+
+Cosmetic:
+  - Version bump to 11.7.0
+
+Bug fix:
+  - Updated unitary tests for text similarity
+
+Features:
+  - Added support of type violation when deploying an experiment
+  - Added support of contact points
+  - Added first level of support for getting info about deployed model's alerts
+
+## 11.3.4
+
+Release date - 2nd December 2021
+
+Cosmetic:
+  - Version bump to 11.3.4
+
+Features:
+  - Improvement of file download and zip extraction that will be done in /tmp directory
+
 ## 11.3.3
 
 Release date - 16th November 2021
